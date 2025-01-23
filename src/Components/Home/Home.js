@@ -7,104 +7,102 @@ import PathButtonHome from './PathButtonHome';
 import CountTech from './CountTech';
 import InfoTechstack from './InfoTechstack';
 import DiscoverTechPosition from './DiscoverTechPosition';
+import Helmet from "../../Helmet";
+
 
 
 function Home() {
 
   
   return (
-    <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      
-      
-      
-    }}
-  >
-     <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      backgroundColor:"black",
-      borderRadius:"10px",
-      marginTop:"20px",
-      marginBottom:"10px"
+
+    <><div>
+      <Helmet
+        title="Tech Stack | Home"
+        description="Welcome to Tech Stack, your go-to platform for developer learning paths."
+        keywords="Tech Stack, Learning Path, Developer Roadmap, Programming" />
      
-      
-      
-    }}
-  >
-    <Typography
-  sx={{
-    textAlign: "center",
-    padding: "20px",
-    
-    fontSize: {
-      xs: "1rem",
-      sm: "1.3rem",
-      md: "1.5rem",
-      lg: "1.8rem",
-    },
-    color: "#fff", // Default text color
-    fontFamily: "'Poppins', sans-serif", // Custom font
-    fontWeight: "bold", // Text boldness
-  }}
->
-  <span style={{ color: "#FFFFFF", textShadow: "1px 1px 2px #000000" }}>
-    Tech Stack -
-  </span>
-  <span style={{ color: "#FFD700", textShadow: "1px 1px 2px #000000" }}>
-    Choose your career Path
-  </span>
-</Typography>
-
-    <CountTech/>
-
-    </Box>
-    <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      marginLeft:"110px"
-
-      
-    }}
+    </div><Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+      }}
     >
-    <InfoTechstack/>
-    </Box>
-    <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      marginTop:"80px"
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "black",
+            borderRadius: "10px",
+            marginTop: "20px",
+            marginBottom: "10px"
+          }}
+        >
+          <Typography
+            sx={{
+              textAlign: "center",
+              padding: "20px",
 
-      
-    }}>
-    
-    <DiscoverTechPosition/>
-    </Box>
+              fontSize: {
+                xs: "1rem",
+                sm: "1.3rem",
+                md: "1.5rem",
+                lg: "1.8rem",
+              },
+              color: "#fff", // Default text color
+              fontFamily: "'Poppins', sans-serif", // Custom font
+              fontWeight: "bold", // Text boldness
+            }}
+          >
+            <span style={{ color: "#FFFFFF", textShadow: "1px 1px 2px #000000" }}>
+              Tech Stack -
+            </span>
+            <span style={{ color: "#FFD700", textShadow: "1px 1px 2px #000000" }}>
+              Choose your career Path
+            </span>
+          </Typography>
 
-    <Box
+          <CountTech />
 
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      
-    }}
-    >
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            marginLeft: "110px"
+          }}
+        >
+          <InfoTechstack />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "80px"
+          }}>
 
-    <BoxOneHome/>
-    <BoxTwoHome/>
-    </Box>
-    
+          <DiscoverTechPosition />
+        </Box>
 
-    <PathButtonHome/>
-  
-    <Footer/>
-    
+        <Box
 
-    </Box>
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+
+          <BoxOneHome />
+          <BoxTwoHome />
+        </Box>
+
+
+        <PathButtonHome />
+
+        <Footer />
+
+
+      </Box></>
   
   )
 }

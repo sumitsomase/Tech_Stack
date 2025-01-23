@@ -20,6 +20,8 @@ function Partner() {
   
 
   return (
+    
+    
     <Box sx={{
        display: "flex" ,
        flexDirection:"column"

@@ -12,81 +12,83 @@ import BoxFiveTechPosition from "./BoxFiveTechPosition";
 import BoxSixTechPosition from "./BoxSixTexhPosition";
 import BoxSevenTechPosition from "./BoxSevenTechPosition";
 import BoxEightTechPosition from "./BoxEightTechPosition";
-
+import Helmet from "../../../Helmet";
 
 const TechPosition=()=>{
 
     
     return(
-       <Box
-       sx={{
-        display: "flex",
-        flexDirection: "column",
-        
-        
-        
-        
-      }}
-    >
-        <Typography
-      sx={{
-        textAlign: "center",
-        padding: "20px",
-        
-        border:"2px solid black",
-        borderLeft:"none",
-        borderRight:"none",
-        
-        fontSize: {
-          xs: "1rem",
-          sm: "1.3rem",
-          md: "1.2rem",
-          lg: "1.6rem",
-        }, 
-      }}
-    >
-      <span style={{fontWeight:"bold"}}>Tech Stack-</span>
-      <span style={{color:"#B31E3E"}}>Choose your career Path</span>
+      <><div>
+        {/* Helmet for meta tags */}
+        <Helmet
+          title="Discover Tech Positions | Tech Stack"
+          description="Explore diverse tech positions and find the right roadmap to accelerate your career in the tech industry."
+          keywords="Tech Positions, Discover Now, Tech Careers, Career Roadmaps, Developer Guidance" />
+      </div><Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+          <Typography
+            sx={{
+              textAlign: "center",
+              padding: "20px",
 
-    </Typography>
+              border: "2px solid black",
+              borderLeft: "none",
+              borderRight: "none",
+
+              fontSize: {
+                xs: "1rem",
+                sm: "1.3rem",
+                md: "1.2rem",
+                lg: "1.6rem",
+              },
+            }}
+          >
+            <span style={{ fontWeight: "bold" }}>Tech Stack-</span>
+            <span style={{ color: "#B31E3E" }}>Choose your career Path</span>
+
+          </Typography>
 
 
-    <InfoTechPosition/>
+          <InfoTechPosition />
 
-    <DiscoverTechPosition/>
-    
-    
+          <DiscoverTechPosition />
 
-    <Box
-    sx={{
-        display: "flex",
-        flexDirection: "row",
-        gap:"40px"
-    }}>
-    <BoxOneTechPosition />
-       <BoxTwoTechPosition />
-      <BoxThreeTechPosition />
-       <BoxFourTechPosition />
-    </Box>
 
-    <Box
-    sx={{
-        display: "flex",
-        flexDirection: "row",
-        gap:"40px"
-    }}>
-    <BoxFiveTechPosition />
-       <BoxSixTechPosition />
-      <BoxSevenTechPosition />
-       <BoxEightTechPosition />
-    </Box>
-    
-    
 
-    <Footer/>
-    
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "40px"
+            }}>
+            <BoxOneTechPosition />
+            <BoxTwoTechPosition />
+            <BoxThreeTechPosition />
+            <BoxFourTechPosition />
+          </Box>
 
-       </Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "40px"
+            }}>
+            <BoxFiveTechPosition />
+            <BoxSixTechPosition />
+            <BoxSevenTechPosition />
+            <BoxEightTechPosition />
+          </Box>
+
+
+
+          <Footer />
+
+
+        </Box></>
     )
 }
 export default TechPosition;
