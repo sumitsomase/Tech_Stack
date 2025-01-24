@@ -72,7 +72,7 @@ function Home() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            marginLeft: isMobile ? "20px" : "110px"
+            marginLeft: isMobile ? "10px" : "110px"
           }}
         >
           <InfoTechstack />
