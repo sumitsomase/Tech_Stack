@@ -24,7 +24,7 @@ const DiscoverTechPosition=()=>{
                    
                     
                     fontSize: {
-                      xs: "1rem",
+                      xs: "1.3rem",
                       sm: "1.3rem",
                       md: "1.2rem",
                       lg: "1.6rem",

@@ -1,11 +1,12 @@
 import React from "react";
-import { Typography, Box, Button,Link } from "@mui/material";
+import { Typography, Box, Button,Link,useMediaQuery, useTheme } from "@mui/material";
 
 
 
 const PathButtonHome = () => {
   
-
+ const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -34,7 +35,7 @@ const PathButtonHome = () => {
         <span
           style={{
             color: "black",
-            fontSize: "18px",
+            fontSize: isMobile ? "13px" : "18px",
             lineHeight: "1.6",
             fontFamily: "Arial, sans-serif",
             fontWeight: "500",
