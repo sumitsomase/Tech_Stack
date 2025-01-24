@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useMediaQuery, useTheme} from "@mui/material";
 import BoxOneHome from './BoxOneHome'
 import BoxTwoHome from './BoxTwoHome';
 import Footer from '../Footer';
@@ -12,6 +12,9 @@ import Helmet from "../../Helmet";
 
 
 function Home() {
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   
   return (
@@ -69,7 +72,7 @@ function Home() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            marginLeft: "110px"
+            marginLeft: isMobile ? "20px" : "110px"
           }}
         >
           <InfoTechstack />

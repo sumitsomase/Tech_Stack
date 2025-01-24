@@ -1,12 +1,15 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 const DiscoverTechPosition=()=>{
+  
+  
     return(
         <Box
         sx={{
             isplay: "flex",
         flexDirection: "column",
+       
         
         
         
@@ -16,6 +19,7 @@ const DiscoverTechPosition=()=>{
                   sx={{
 
                    marginTop:"15px",
+                   
                     
                    
                     

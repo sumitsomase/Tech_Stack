@@ -1,7 +1,12 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
 
+
 const InfoTechstack = () => {
+  
+  
+  
+
   return (
     <Box
       sx={{
@@ -9,14 +14,16 @@ const InfoTechstack = () => {
         flexDirection: "row", // Arranges the sections side by side
         width: "100%",
         marginTop: "10px",
-        alignItems: "center",
+        alignItems:  "center",
+        
+       
         
       }}
     >
       {/* Left Section */}
       <Typography
         sx={{
-          textAlign: "center",
+          textAlign:  "center",
           padding: "40px",
           marginTop: "50px",
           fontSize: {
@@ -29,7 +36,7 @@ const InfoTechstack = () => {
       >
         <span
           style={{
-            color: "#4B5556",
+            color:"#4B5556",
             fontSize: "18px",
             lineHeight: "1.6",
             fontFamily: "Arial, sans-serif",
@@ -48,8 +55,8 @@ const InfoTechstack = () => {
       {/* Right Section */}
       <Typography
         sx={{
-          textAlign: "center",
-          padding: "40px",
+          textAlign:  "center",
+          padding:  "40px",
           marginTop: "50px",
           border: "1px solid red",
           borderTop: "none", // Hide the top border
