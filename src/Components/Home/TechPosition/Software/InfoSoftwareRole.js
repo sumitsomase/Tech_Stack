@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box, Button, Link } from "@mui/material";
+import Responsive from "../../../Responsive";
 
 
 const InfoSoftwareRole = () => {
@@ -9,7 +10,7 @@ const InfoSoftwareRole = () => {
         display: "flex",
         flexDirection: "column", // Changed to column to stack content and button
         width: "100%",
-        marginTop: "10px",
+        marginTop: Responsive ? "0px" :"10px",
 
         alignItems: "center", // Centers the content
       }}
@@ -17,8 +18,8 @@ const InfoSoftwareRole = () => {
       <Typography
         sx={{
           textAlign: "center",
-          padding: "40px",
-          marginTop: "50px",
+          padding: Responsive? "20px" :"40px",
+          marginTop: Responsive ? "0px" :"50px",
           fontSize: {
             xs: "1rem",
             sm: "1.3rem",

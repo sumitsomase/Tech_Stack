@@ -50,7 +50,7 @@ const FrontendDeveloper=()=>{
             marginTop: Responsive ? "90px" :"150px",
             gap:"10px",
             marginBottom:"150px",
-            marginLeft:{xs : "180px"},
+            marginLeft:{xs : "160px"},
             
             
         }}>

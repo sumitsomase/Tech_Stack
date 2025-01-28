@@ -17,6 +17,7 @@ import TestingSoftware from "./TestingSoftware";
 import DeploymentSoftware from "./DeploymentSoftware";
 import TextTwoSoftware from "./TextTwoSoftware";
 import Footer from "../../../Footer";
+import Responsive from "../../../Responsive";
 
 const SoftwareDeveloper=()=>{
     return(
@@ -43,10 +44,10 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: Responsive ? "column" :"row",
             marginTop:"100px",
             gap:"20px",
-        marginLeft:"60px"
+        marginLeft: Responsive ? "1px" :"60px"
            
             
             
@@ -60,7 +61,7 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: Responsive ? "column" :"row",
             marginTop:"10px",
            
             gap:"20px",
@@ -76,7 +77,7 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: Responsive ? "column" :"row",
             marginTop:"10px",
            
             gap:"20px",

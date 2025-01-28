@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { Box, Typography } from "@mui/material";
+import Responsive from '../../../Responsive';
 
 
 const PythonSoftware = () => {
@@ -11,7 +12,8 @@ const PythonSoftware = () => {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          position: "relative", // For tooltip positioning
+          position: "relative", // For tooltip 
+          marginLeft:{xs : "11px"}
           
         }}
       >
@@ -20,8 +22,8 @@ const PythonSoftware = () => {
         {/* Main Box */}
         <Box
           sx={{
-            width: "280px",
-            height: "18px",
+            width: Responsive ? "200px" : "280px",
+            height: Responsive ? "10px" :"18px",
             display: "flex",
             flexDirection: "column",
             
@@ -45,7 +47,7 @@ const PythonSoftware = () => {
           }}
           
         >
-          <Typography variant="h6" sx={{fontSize:"20px", fontWeight: "16px" ,color: "#94A3B8"}}>
+          <Typography variant="h6" sx={{fontSize: Responsive ? "15px" :"20px", fontWeight: "16px" ,color: "#94A3B8"}}>
           PYTHON
           </Typography>
   

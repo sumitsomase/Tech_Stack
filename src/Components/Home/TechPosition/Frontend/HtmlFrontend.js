@@ -23,7 +23,7 @@ const HtmlFrontend = () => {
         textAlign: "center",
         position: "relative",
         cursor: "pointer",
-        marginLeft: Responsive ? "48px" :"90px"
+        marginLeft: Responsive ? "44px" :"90px"
       }}
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}
