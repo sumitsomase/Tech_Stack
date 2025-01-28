@@ -1,14 +1,17 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link , useTheme,useMediaQuery} from "@mui/material";
 import android from "../../Images/android.png";
 
 const BoxFiveTechPosition = () => {
+   const theme= useTheme();
+    const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        width:"40%"
+        width:isMobile ? "80%" : "40%",
+        marginLeft: {xs : "40px"},
       }}
     >
       <Box
@@ -36,7 +39,7 @@ const BoxFiveTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "13px",
+          marginLeft: isMobile ? "50px" :"13px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

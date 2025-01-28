@@ -1,16 +1,19 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery} from "@mui/material";
 import web from "../../Images/web.png";
 
 const BoxSixTechPosition = () => {
+  const theme= useTheme();
+    const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginTop:"100px",
-        width:"40%"
+        marginTop:isMobile ? "1px" :"100px",
+        width:isMobile ? "80%" :"40%",
+        marginLeft: {xs : "40px"},
       }}
     >
       <Box
@@ -40,7 +43,7 @@ const BoxSixTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "16px",
+          marginLeft: isMobile ? "50px" :"16px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

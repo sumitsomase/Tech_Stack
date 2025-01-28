@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import { Typography, Box, Link ,useMediaQuery, useTheme} from "@mui/material";
 import BoxOneHome from './BoxOneHome'
 import BoxTwoHome from './BoxTwoHome';
@@ -75,7 +75,9 @@ function Home() {
             marginLeft: isMobile ? "10px" : "110px"
           }}
         >
+          
           <InfoTechstack />
+         
         </Box>
         <Box
           sx={{

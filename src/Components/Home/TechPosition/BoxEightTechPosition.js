@@ -1,15 +1,18 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link , useTheme,useMediaQuery} from "@mui/material";
 import dataanalysis from "../../Images/dataanalysis.jpg";
 
 const BoxEightTechPosition = () => {
+   const theme= useTheme();
+    const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginTop:"100px",
+        marginTop: isMobile ? "1px" :"100px",
+        marginLeft: {xs : "40px"},
        
       }}
     >
@@ -17,7 +20,7 @@ const BoxEightTechPosition = () => {
         sx={{
           display: "flex",
           flexDirection: "row",
-          width: "80%",
+          width: isMobile ? "85%" : "80%",
           marginTop: "50px",
           overflow: "hidden",
           border: "1px solid black",
@@ -42,7 +45,7 @@ const BoxEightTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "4px",
+          marginLeft: isMobile ? "50px" :"4px",
           padding: "5px",
           border: "1px solid black",
           width: "250px",

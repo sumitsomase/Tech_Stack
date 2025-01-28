@@ -1,15 +1,18 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import fullsatck from "../../Images/fullstack.webp";
 
 const BoxFourTechPosition = () => {
+  const theme= useTheme();
+  const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginTop:"100px",
+        marginTop: isMobile ? "1px" : "100px",
+        marginLeft: {xs : "40px"},
        
       }}
     >
@@ -17,7 +20,7 @@ const BoxFourTechPosition = () => {
         sx={{
           display: "flex",
           flexDirection: "row",
-          width: "80%",
+          width: isMobile ? "90%" : "80%",
           marginTop: "50px",
           overflow: "hidden",
           
@@ -40,7 +43,7 @@ const BoxFourTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "10px",
+          marginLeft: isMobile ? "50px" :"10px",
           padding: "5px",
           border: "1px solid black",
           width: "250px",

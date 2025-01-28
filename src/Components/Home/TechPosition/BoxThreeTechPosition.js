@@ -1,14 +1,17 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import backenddev from "../../Images/backenddev.png";
 
 const BoxThreeTechPosition = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
+        marginLeft: {xs : "40px"},
       }}
     >
       <Box
@@ -36,7 +39,7 @@ const BoxThreeTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "12px",
+          marginLeft:isMobile ? "50px" : "12px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

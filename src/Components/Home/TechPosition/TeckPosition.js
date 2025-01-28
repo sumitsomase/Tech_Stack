@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect  } from "react";
 import Marquee from "react-fast-marquee";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link , useMediaQuery,useTheme } from "@mui/material";
 import DiscoverTechPosition from "../DiscoverTechPosition";
 import BoxOneTechPosition from "./BoxOneTechPosition";
 import BoxTwoTechPosition from "./BoxTwoTechPosition";
@@ -15,6 +15,9 @@ import BoxEightTechPosition from "./BoxEightTechPosition";
 import Helmet from "../../../Helmet";
 
 const TechPosition=()=>{
+
+  const theme =useTheme();
+  const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
 
     
     return(
@@ -62,8 +65,8 @@ const TechPosition=()=>{
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
-              gap: "40px"
+              flexDirection: isMobile ? "column" : "row",
+              gap: isMobile ? "1px" :  "40px"
             }}>
             <BoxOneTechPosition />
             <BoxTwoTechPosition />
@@ -74,8 +77,8 @@ const TechPosition=()=>{
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
-              gap: "40px"
+              flexDirection: isMobile ? "column" : "row",
+              gap: isMobile ? "1px" : "40px"
             }}>
             <BoxFiveTechPosition />
             <BoxSixTechPosition />

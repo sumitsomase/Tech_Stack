@@ -1,15 +1,18 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import datascience from "../../Images/datascience.png";
 
 const BoxSevenTechPosition = () => {
+  const theme= useTheme();
+    const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        width:"40%"
+        width: isMobile ? "80%" :"40%",
+        marginLeft: {xs : "40px"},
       }}
     >
       <Box
@@ -37,7 +40,7 @@ const BoxSevenTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "18px",
+          marginLeft: isMobile ? "50px" : "18px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

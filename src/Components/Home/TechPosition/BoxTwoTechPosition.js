@@ -1,23 +1,26 @@
 import React from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link ,useMediaQuery,useTheme } from "@mui/material";
 
 import softwaredev from "../../Images/softwaredev.png";
 
 const BoxTwoTechPosition = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginTop:"100px"
+        marginTop: isMobile ? "2px" : "100px",
+        marginLeft: {xs : "40px"},
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
-          width: "90%",
+          width:  "90%",
           marginTop: "50px",
           overflow: "hidden",
          
@@ -40,7 +43,7 @@ const BoxTwoTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: "5px",
+          marginLeft: isMobile ? "50px" : "5px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",
