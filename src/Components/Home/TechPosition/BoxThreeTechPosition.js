@@ -39,7 +39,7 @@ const BoxThreeTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft:isMobile ? "50px" : "12px",
+          marginLeft:isMobile ? "40px" : "12px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

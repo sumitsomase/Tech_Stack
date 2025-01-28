@@ -40,7 +40,7 @@ const BoxSevenTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: isMobile ? "50px" : "18px",
+          marginLeft: isMobile ? "40px" : "18px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

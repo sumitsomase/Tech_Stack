@@ -12,7 +12,7 @@ const BoxEightTechPosition = () => {
         display: "flex",
         flexDirection: "column",
         marginTop: isMobile ? "1px" :"100px",
-        marginLeft: {xs : "40px"},
+        marginLeft: {xs : "47px"},
        
       }}
     >
@@ -45,7 +45,7 @@ const BoxEightTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: isMobile ? "50px" :"4px",
+          marginLeft: isMobile ? "20px" :"4px",
           padding: "5px",
           border: "1px solid black",
           width: "250px",
