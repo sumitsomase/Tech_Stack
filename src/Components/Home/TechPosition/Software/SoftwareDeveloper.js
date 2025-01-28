@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button,Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import TextSoftware from "./TextSoftware";
 
 import DiscoverTechPosition from "../../DiscoverTechPosition";
@@ -17,9 +17,10 @@ import TestingSoftware from "./TestingSoftware";
 import DeploymentSoftware from "./DeploymentSoftware";
 import TextTwoSoftware from "./TextTwoSoftware";
 import Footer from "../../../Footer";
-import Responsive from "../../../Responsive";
 
 const SoftwareDeveloper=()=>{
+    const theme= useTheme();
+          const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
     return(
         <Box
         sx={{
@@ -44,10 +45,10 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection: Responsive ? "column" :"row",
+            flexDirection: isMobile? "column" :"row",
             marginTop:"100px",
             gap:"20px",
-        marginLeft: Responsive ? "1px" :"60px"
+        marginLeft: isMobile ? "1px" :"60px"
            
             
             
@@ -61,8 +62,8 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection: Responsive ? "column" :"row",
-            marginTop:"10px",
+            flexDirection: isMobile ? "column" :"row",
+            marginTop: isMobile ? "40px" :"10px",
            
             gap:"20px",
              marginLeft:"150px"
@@ -77,11 +78,11 @@ const SoftwareDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection: Responsive ? "column" :"row",
-            marginTop:"10px",
+            flexDirection: isMobile ? "column" :"row",
+            marginTop: isMobile ? "40px" :"10px",
            
             gap:"20px",
-             marginLeft:"150px"
+             marginLeft: isMobile ? "11px" :"150px"
            
            
         }}>
@@ -97,7 +98,7 @@ const SoftwareDeveloper=()=>{
             marginTop:"10px",
            
             gap:"20px",
-             marginLeft:"150px",
+             marginLeft: isMobile ? "11px" :"150px",
              marginBottom:"100px"
            
            

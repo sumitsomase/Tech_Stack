@@ -1,9 +1,10 @@
 import React from "react";
-import { Typography, Box, Button, Link } from "@mui/material";
-import Responsive from "../../../Responsive";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 
 
 const InfoFrontendDevRole = () => {
+   const theme= useTheme();
+        const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -19,7 +20,7 @@ const InfoFrontendDevRole = () => {
         sx={{
           textAlign: "center",
           padding: "40px",
-          marginTop: Responsive ? "1px" : "50px",
+          marginTop: isMobile ? "1px" : "50px",
           fontSize: {
             xs: "1rem",
             sm: "1.3rem",

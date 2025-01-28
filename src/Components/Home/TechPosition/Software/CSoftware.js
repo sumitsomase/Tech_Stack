@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
-import { Box, Typography } from "@mui/material";
-import Responsive from '../../../Responsive';
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 
 
 const CSoftware = () => {
-    const [showInfo, setShowInfo] = useState(false);
+    const theme= useTheme();
+          const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
 
     return (
       <Box
@@ -13,7 +13,7 @@ const CSoftware = () => {
           flexDirection: "row",
           alignItems: "center",
           position: "relative", // For tooltip positioning
-          marginLeft:{xs : "11px"}
+          marginLeft:{xs : "11px" , lg :"0px"}
           
         }}
       >
@@ -22,8 +22,8 @@ const CSoftware = () => {
         {/* Main Box */}
         <Box
           sx={{
-            width: Responsive ? "200px" :"280px",
-            height:Responsive ? "10px" : "18px",
+            width: isMobile ? "200px" :"280px",
+            height:isMobile? "10px" : "18px",
             display: "flex",
             flexDirection: "column",
             
@@ -47,7 +47,7 @@ const CSoftware = () => {
           }}
           
         >
-          <Typography variant="h6" sx={{fontSize: Responsive ? "15px" : "20px", fontWeight: "16px" ,color: "#94A3B8"}}>
+          <Typography variant="h6" sx={{fontSize: isMobile ? "15px" : "20px", fontWeight: "16px" ,color: "#94A3B8"}}>
           C++
           </Typography>
   

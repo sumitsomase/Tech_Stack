@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Responsive from "../../../Responsive";
 
 const ReactFrontend = () => {
+   const theme= useTheme();
+        const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   const [showInfo, setShowInfo] = useState(false);
 
   return (
@@ -13,7 +14,7 @@ const ReactFrontend = () => {
         flexDirection: "row",
         alignItems: "center",
         position: "relative", // For tooltip positioning
-        marginLeft: Responsive ? "0px" :"50px"
+        marginLeft: isMobile ? "0px" :"50px"
       }}
     >
       {/* Arrow Icon outside the box */}

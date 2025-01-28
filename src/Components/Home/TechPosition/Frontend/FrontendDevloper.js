@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button,Link } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import TextFrontend from "./TextFrontend";
 import DiscoverTechPosition from "../../DiscoverTechPosition";
 import HtmlFrontend from "./HtmlFrontend";
@@ -14,9 +14,11 @@ import AngularFrontend from "./AngularFrontend";
 import ApiFrontend from "./ApiFrontend";
 import StateManageFrontend from "./StateManageFrontend";
 import DeploymentFrontend from "./DeploymentFrontend";
-import Responsive from "../../../Responsive";
+
 
 const FrontendDeveloper=()=>{
+      const theme= useTheme();
+          const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
 
     return(
         <Box
@@ -30,7 +32,7 @@ const FrontendDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection: Responsive ? "column" : "row",
+            flexDirection: isMobile? "column" : "row",
             marginTop:"50px",
             gap:"10px",
             
@@ -46,11 +48,11 @@ const FrontendDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection: Responsive ? "column" :"row",
-            marginTop: Responsive ? "90px" :"150px",
+            flexDirection: isMobile ? "column" :"row",
+            marginTop: isMobile ? "90px" :"150px",
             gap:"10px",
             marginBottom:"150px",
-            marginLeft:{xs : "160px"},
+            marginLeft:{xs : "160px" , lg: "0px"},
             
             
         }}>

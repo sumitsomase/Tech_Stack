@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 import CodeIcon from "@mui/icons-material/Code"; // Import the 
-import Responsive from "../../../Responsive";
 
 const HtmlFrontend = () => {
+  const theme= useTheme();
+  const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
   const [showInfo, setShowInfo] = useState(false);
 
   return (
@@ -23,7 +24,7 @@ const HtmlFrontend = () => {
         textAlign: "center",
         position: "relative",
         cursor: "pointer",
-        marginLeft: Responsive ? "44px" :"90px"
+        marginLeft: isMobile ? "44px" :"90px"
       }}
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}

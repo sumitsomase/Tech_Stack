@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
-import { Box, Typography } from "@mui/material";
+import { Typography, Box, Link ,useTheme,useMediaQuery } from "@mui/material";
 
 
 const DeploymentSoftware = () => {
+  const theme= useTheme();
+      const isMobile=useMediaQuery(theme.breakpoints.down("sm"));
     const [showInfo, setShowInfo] = useState(false);
 
     return (
@@ -20,8 +22,8 @@ const DeploymentSoftware = () => {
         {/* Main Box */}
         <Box
           sx={{
-            width: "280px",
-            height: "18px",
+            width: isMobile? "200px" :"280px",
+            height: isMobile ? "10px" :"18px",
             display: "flex",
             flexDirection: "column",
             
@@ -45,7 +47,7 @@ const DeploymentSoftware = () => {
           }}
           
         >
-          <Typography variant="h6" sx={{fontSize:"20px", fontWeight: "16px" ,color: "#94A3B8"}}>
+          <Typography variant="h6" sx={{fontSize:isMobile ? "15px" :"20px", fontWeight: "16px" ,color: "#94A3B8"}}>
           Deployment
           </Typography>
   
