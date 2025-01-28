@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
-import CodeIcon from "@mui/icons-material/Code"; // Import the icon
+import CodeIcon from "@mui/icons-material/Code"; // Import the 
+import Responsive from "../../../Responsive";
 
 const HtmlFrontend = () => {
   const [showInfo, setShowInfo] = useState(false);
@@ -22,7 +23,7 @@ const HtmlFrontend = () => {
         textAlign: "center",
         position: "relative",
         cursor: "pointer",
-        marginLeft:"90px"
+        marginLeft: Responsive ? "48px" :"90px"
       }}
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}

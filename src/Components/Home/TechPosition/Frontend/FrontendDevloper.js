@@ -14,6 +14,7 @@ import AngularFrontend from "./AngularFrontend";
 import ApiFrontend from "./ApiFrontend";
 import StateManageFrontend from "./StateManageFrontend";
 import DeploymentFrontend from "./DeploymentFrontend";
+import Responsive from "../../../Responsive";
 
 const FrontendDeveloper=()=>{
 
@@ -29,7 +30,7 @@ const FrontendDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: Responsive ? "column" : "row",
             marginTop:"50px",
             gap:"10px",
             
@@ -45,10 +46,11 @@ const FrontendDeveloper=()=>{
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
-            marginTop:"150px",
+            flexDirection: Responsive ? "column" :"row",
+            marginTop: Responsive ? "90px" :"150px",
             gap:"10px",
-            marginBottom:"150px"
+            marginBottom:"150px",
+            marginLeft:{xs : "180px"},
             
             
         }}>

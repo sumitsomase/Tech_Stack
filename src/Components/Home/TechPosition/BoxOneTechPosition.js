@@ -40,7 +40,7 @@ const BoxOneTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: isMobile ? "40px" : "3px",
+          marginLeft: isMobile ? "36px" : "3px",
           padding: "5px",
           border: "1px solid black",
           width: "230px",

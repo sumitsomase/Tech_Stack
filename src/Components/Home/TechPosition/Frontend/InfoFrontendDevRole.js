@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box, Button, Link } from "@mui/material";
+import Responsive from "../../../Responsive";
 
 
 const InfoFrontendDevRole = () => {
@@ -18,7 +19,7 @@ const InfoFrontendDevRole = () => {
         sx={{
           textAlign: "center",
           padding: "40px",
-          marginTop: "50px",
+          marginTop: Responsive ? "1px" : "50px",
           fontSize: {
             xs: "1rem",
             sm: "1.3rem",

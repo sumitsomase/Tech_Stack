@@ -69,7 +69,7 @@ const Contact = () => {
       >
         Feel free to reach out to us with any questions or feedback. We’re here
         to help! You can also email us directly at{" "}
-        <span style={{ fontWeight: "bold" }}>sumitsomase@gmail.com</span>.
+        <span style={{ fontWeight: "bold" }}>sumitsomase65@gmail.com</span>.
       </Typography>
 
       <Box

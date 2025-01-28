@@ -43,7 +43,7 @@ const BoxFourTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: isMobile ? "30px" :"10px",
+          marginLeft: isMobile ? "27px" :"10px",
           padding: "5px",
           border: "1px solid black",
           width: "250px",

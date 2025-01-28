@@ -45,7 +45,7 @@ const BoxEightTechPosition = () => {
       <Typography
         sx={{
           marginTop: "15px",
-          marginLeft: isMobile ? "20px" :"4px",
+          marginLeft: isMobile ? "15px" :"4px",
           padding: "5px",
           border: "1px solid black",
           width: "250px",
