@@ -13,7 +13,7 @@ const BoxSixTechPosition = () => {
         flexDirection: "column",
         marginTop:isMobile ? "1px" :"100px",
         width:isMobile ? "80%" :"40%",
-        marginLeft: {xs : "40px"},
+        marginLeft: {xs : "40px" , lg : "0px"},
       }}
     >
       <Box

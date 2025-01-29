@@ -33,7 +33,7 @@ const CssFrontend = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          background: "black",
           borderRadius: "16px",
           boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
           color: "#fff",

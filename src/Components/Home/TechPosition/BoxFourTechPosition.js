@@ -12,7 +12,7 @@ const BoxFourTechPosition = () => {
         display: "flex",
         flexDirection: "column",
         marginTop: isMobile ? "1px" : "100px",
-        marginLeft: {xs : "40px"},
+        marginLeft: {xs : "40px" , lg : "0px"},
        
       }}
     >

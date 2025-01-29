@@ -5,6 +5,8 @@ import PartnershipWithHirehub from "./PartnershipWithHirehub";
 import Footer from "../Footer";
 
 
+
+
 function Partner() {
   const FlipAnimation = keyframes`
   0% {
@@ -85,6 +87,7 @@ function Partner() {
 
       <PartnershipWithHirehub/>
       <Footer/>
+    
     </Box>
   );
 }

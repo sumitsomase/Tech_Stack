@@ -11,7 +11,7 @@ const BoxThreeTechPosition = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginLeft: {xs : "40px"},
+        marginLeft: {xs : "40px" ,lg : "0px"},
       }}
     >
       <Box

@@ -185,6 +185,7 @@ function App() {
         <Route path="/WebDeveloper" element={<WebDeveloper />} />
         <Route path="/DataSCience" element={<DataSCience/>} />
         <Route path="/DataAnalysis" element={<DataAnalysis/>} />
+        
 
       </Routes>
     </Router>

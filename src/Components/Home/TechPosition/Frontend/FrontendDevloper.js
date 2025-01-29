@@ -29,6 +29,13 @@ const FrontendDeveloper=()=>{
             <TextFrontend/>
             <InfoFrontendDevRole/>
             <DiscoverTechPosition/>
+
+            <Box
+            sx={{
+                border:"1px solid black",
+                borderLeft:"none",
+                borderRight:"none"
+            }}>
             <Box
         sx={{
             display:"flex",
@@ -61,6 +68,7 @@ const FrontendDeveloper=()=>{
             <ApiFrontend/>
             <StateManageFrontend/>
             <DeploymentFrontend/>
+            </Box>
             </Box>
 
             <Footer/>

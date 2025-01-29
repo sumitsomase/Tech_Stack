@@ -15,7 +15,8 @@ const PathButtonHome = () => {
         width: "100%",
         marginTop: "80px",
         alignItems: "center",  // Centers the content
-        backgroundColor:"#E8F9FF",
+        //backgroundColor:"#E8F9FF",
+        backgroundColor:"black",
         borderRadius:"6px",
 
       }}
@@ -34,7 +35,7 @@ const PathButtonHome = () => {
       >
         <span
           style={{
-            color: "black",
+            color: "#F2EFE7",
             fontSize: isMobile ? "13px" : "18px",
             lineHeight: "1.6",
             fontFamily: "Arial, sans-serif",
@@ -84,6 +85,8 @@ const PathButtonHome = () => {
         Start Your Path
       </Button>
     </Link>
+   
+    
     </Box>
   );
 };

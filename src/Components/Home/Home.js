@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { Typography, Box, Link ,useMediaQuery, useTheme} from "@mui/material";
 import BoxOneHome from './BoxOneHome'
 import BoxTwoHome from './BoxTwoHome';
@@ -11,11 +11,15 @@ import Helmet from "../../Helmet";
 
 
 
+
+
 function Home() {
+  
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  
   
   return (
 
@@ -76,7 +80,9 @@ function Home() {
           }}
         >
           
-          <InfoTechstack />
+          
+             <InfoTechstack />
+          
          
         </Box>
         <Box
