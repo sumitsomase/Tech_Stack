@@ -77,20 +77,16 @@ const BackendDeveloper = () => {
             flexDirection:"row",
             marginTop:"40px",
             gap:"20px",
-        marginLeft:"60px",
-        marginBottom:"40px"
+           marginLeft:"60px",
+           marginBottom:"40px"
            
             
             
         }}>
 
           <ToolBackend/>
-           
-
            </Box>
            </Box>
-
-
             <Footer/>
             
 
