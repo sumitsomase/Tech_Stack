@@ -1,8 +1,11 @@
 import React from "react";
-import { Typography, Box, Button, Link } from "@mui/material";
+import { Typography, Box, Button, Link, useTheme, useMediaQuery } from "@mui/material";
 
 
 const InfoBackend = () => {
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -10,6 +13,8 @@ const InfoBackend = () => {
         flexDirection: "row", // Changed to column to stack content and button
         width: "100%",
         marginTop: "10px",
+        marginTop:isMobile?"-40px": "10px",
+         marginLeft:isMobile?"-10px":"0px",
 
         alignItems: "center", // Centers the content
         
@@ -19,8 +24,8 @@ const InfoBackend = () => {
       <Typography
         sx={{
           textAlign: "center",
-          padding: "40px",
-          marginTop: "50px",
+          padding:isMobile?"15px": "40px",
+          marginTop: isMobile?"10px":"50px",
           fontSize: {
             xs: "1rem",
             sm: "1.3rem",
@@ -32,7 +37,7 @@ const InfoBackend = () => {
         <span
           style={{
             color: "#4B5556",
-            fontSize: "18px",
+            fontSize:isMobile?"14px": "18px",
             lineHeight: "1.6",
             fontFamily: "Arial, sans-serif",
             fontWeight: "500",
@@ -55,7 +60,7 @@ const InfoBackend = () => {
       <Typography
         sx={{
           textAlign: "center",
-          padding: "40px",
+          padding:isMobile?"15px": "40px",
           marginTop: "50px",
           border:"1px solid red",
         borderTop: "none", // Hide the top border
@@ -72,7 +77,7 @@ const InfoBackend = () => {
         <span
           style={{
             color: "#4B5556",
-            fontSize: "18px",
+            fontSize:isMobile?"14px": "18px",
             lineHeight: "1.6",
             fontFamily: "Arial, sans-serif",
             fontWeight: "500",

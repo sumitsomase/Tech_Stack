@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button,Link } from "@mui/material";
+import { Typography, Box, Button,Link, useMediaQuery, useTheme } from "@mui/material";
 import TextBackend from "./TextBackend";
 import InfoBackend from "./Infobackend";
 import DiscoverTechPosition from "../../DiscoverTechPosition";
@@ -12,6 +12,9 @@ import ToolBackend from "./ToolBackend";
 import Footer from '../../../Footer';
 
 const BackendDeveloper = () => {
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
            sx={{
@@ -36,10 +39,10 @@ const BackendDeveloper = () => {
             <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: isMobile ? "column" :"row",
             marginTop:"60px",
             gap:"20px",
-        marginLeft:"60px"
+            marginLeft:"60px"
            
             
             
@@ -53,7 +56,7 @@ const BackendDeveloper = () => {
            <Box
         sx={{
             display:"flex",
-            flexDirection:"row",
+            flexDirection: isMobile ? "column" :"row",
             marginTop:"40px",
             gap:"20px",
         marginLeft:"60px"
@@ -74,20 +77,16 @@ const BackendDeveloper = () => {
             flexDirection:"row",
             marginTop:"40px",
             gap:"20px",
-        marginLeft:"60px",
-        marginBottom:"40px"
+           marginLeft:"60px",
+           marginBottom:"40px"
            
             
             
         }}>
 
           <ToolBackend/>
-           
-
            </Box>
            </Box>
-
-
             <Footer/>
             
 
