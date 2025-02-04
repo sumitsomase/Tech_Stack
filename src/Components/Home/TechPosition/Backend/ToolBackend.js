@@ -1,9 +1,12 @@
 import React,{useState} from 'react';
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 
 
 const ToolBackend = () => {
     const [showInfo, setShowInfo] = useState(false);
+    
+    const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     return (
       <Box
@@ -12,7 +15,7 @@ const ToolBackend = () => {
           flexDirection: "row",
           alignItems: "center",
           position: "relative", // For tooltip positioning
-          marginLeft:"90px"
+           marginLeft:isMobile ? "-50px" : "70px"
         }}
       >
        
@@ -20,7 +23,7 @@ const ToolBackend = () => {
         {/* Main Box */}
         <Box
           sx={{
-            width: "280px",
+            width: isMobile?"200px": "280px",
             height: "18px",
             display: "flex",
             flexDirection: "column",
