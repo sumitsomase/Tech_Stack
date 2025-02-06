@@ -15,7 +15,7 @@ const ToolBackend = () => {
           flexDirection: "row",
           alignItems: "center",
           position: "relative", // For tooltip positioning
-           marginLeft:isMobile ? "-50px" : "70px"
+           marginLeft:isMobile ? "-50px" : "90px"
         }}
       >
        
