@@ -12,38 +12,30 @@ const DatabaseBackend = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection:"row",
           alignItems: "center",
           position: "relative", // For tooltip positioning
-           marginLeft:isMobile ? "-50px" : "90px"
+          marginLeft:isMobile ? "0px" : "90px",
+          width: isMobile ? "100%" : "auto",
         }}
       >
-       
-  
         {/* Main Box */}
         <Box
           sx={{
-            width:  isMobile?"200px":"280px",
+            width: isMobile ? "100%" : "280px",
             height: "18px",
             display: "flex",
-            flexDirection: "column",
-            
+            flexDirection: "column",        
             justifyContent: "center",
             backgroundColor:"#OF172A",
             border: "0.5px solid rgb(148 163 184)",
            borderRadius:"6px",
-           
-           
-           
-           
-            
             padding: "16px",
-            
             cursor: "pointer",
             fontFamily: "Arial, sans-serif",
-          transition: "border-color 0.3s ease", // Smooth transition effect
+          transition: "border-color 0.3s ease", 
             "&:hover": {
-              borderColor: "#872341", // Brighter border color on hover
+              borderColor: "#872341", 
             },
           }}
           
@@ -51,22 +43,20 @@ const DatabaseBackend = () => {
           <Typography variant="h6" sx={{ fontSize:"20px",fontWeight: "16px" ,color: "#94A3B8"}}>
           Database
           </Typography>
-  
-         
         </Box>
 
         <Box 
         sx={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: isMobile ? "column" : "row",
             border:"1px solid red",
-            marginLeft:"10px",
+            marginLeft: isMobile ? "0px" : "10px",
             borderTop:"none",
             borderBottom:"none",
             borderRight:"none",
-            height:"230px"
-
-            
+            height: isMobile ? "auto" : "230px",
+            padding: isMobile ? "10px" : "0px",
+            width: isMobile ? "100%" : "auto", 
         }}
         >
             <Box

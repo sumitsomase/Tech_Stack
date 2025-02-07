@@ -15,7 +15,8 @@ const ApiBackend = () => {
           flexDirection: "row",
           alignItems: "center",
           position: "relative", // For tooltip positioning
-          marginLeft:isMobile ? "-50px" : "70px"
+          marginLeft:isMobile ? "0px" : "90px",
+          width: isMobile ? "100%" : "auto",
         }}
       >
        
@@ -23,22 +24,15 @@ const ApiBackend = () => {
         {/* Main Box */}
         <Box
           sx={{
-            width:  isMobile?"200px":"280px",
+            width: isMobile ? "100%" : "280px",
             height: "18px",
             display: "flex",
             flexDirection: "column",
-            
             justifyContent: "center",
             backgroundColor:"#OF172A",
             border: "0.5px solid rgb(148 163 184)",
-           borderRadius:"6px",
-           
-           
-           
-           
-            
+           borderRadius:"6px",   
             padding: "16px",
-            
             cursor: "pointer",
             fontFamily: "Arial, sans-serif",
           transition: "border-color 0.3s ease", // Smooth transition effect
@@ -60,12 +54,13 @@ const ApiBackend = () => {
             display: "flex",
             flexDirection: "row",
             border:"1px solid red",
-            marginLeft:"10px",
+            marginLeft: isMobile ? "0px" : "10px",
             borderTop:"none",
             borderBottom:"none",
             borderRight:"none",
-            height:"230px"
-
+            height: isMobile ? "auto" : "230px",
+            padding: isMobile ? "10px" : "0px",
+            width: isMobile ? "100%" : "auto",
             
         }}
         >
